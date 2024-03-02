@@ -1,0 +1,8 @@
+#title:PCA
+#Author:"Parisa Moghadam"
+
+library(ggfortify)
+df <- iris[1:4]
+pca_res <- prcomp(df, scale. = TRUE)
+
+autoplot(pca_res, data = iris, colour = 'Species')
